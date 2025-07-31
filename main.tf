@@ -13,3 +13,10 @@ resource "azurerm_resource_group" "rg" {
 
   
 }
+resource "azurerm_resource_group" "rg" {
+    count = 9
+    name = "sarv_verma_${count.index}"
+    location = "east us"
+
+  
+}
